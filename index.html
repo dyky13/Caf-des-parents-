@@ -70,40 +70,44 @@ button {
 
 <main>
 
+<form action="https://formspree.io/f/mdabkgnb" method="POST">
+
 <div class="card">
 <h2>1 - Humeur</h2>
-<label><input type="checkbox"> Bien</label>
-<label><input type="checkbox"> Très bien</label>
-<label><input type="checkbox"> Stressé(e)</label>
+<label><input type="checkbox" name="humeur" value="Bien"> Bien</label>
+<label><input type="checkbox" name="humeur" value="Très bien"> Très bien</label>
+<label><input type="checkbox" name="humeur" value="Stressé"> Stressé(e)</label>
 </div>
 
 <div class="card">
 <h2>2 - Famille</h2>
-<label><input type="checkbox"> Parent</label>
-<label><input type="checkbox"> Grand-parent</label>
-<label><input type="checkbox"> Tante / Oncle</label>
-<label><input type="checkbox"> Famille d’accueil</label>
+<label><input type="checkbox" name="famille" value="Parent"> Parent</label>
+<label><input type="checkbox" name="famille" value="Grand-parent"> Grand-parent</label>
+<label><input type="checkbox" name="famille" value="Tante/Oncle"> Tante / Oncle</label>
+<label><input type="checkbox" name="famille" value="Famille accueil"> Famille d’accueil</label>
 </div>
 
 <div class="card">
 <h2>3 - Historique</h2>
-<label><input type="checkbox"> 1971</label>
-<label><input type="checkbox"> 1982</label>
-<label><input type="checkbox"> 2001</label>
+<label><input type="checkbox" name="historique" value="1971"> 1971</label>
+<label><input type="checkbox" name="historique" value="1982"> 1982</label>
+<label><input type="checkbox" name="historique" value="2001"> 2001</label>
 </div>
 
 <div class="card">
 <h2>4 - Perception</h2>
-<textarea placeholder="Votre réponse..."></textarea>
-<label><input type="checkbox"> Oui</label>
-<label><input type="checkbox"> Non</label>
+<textarea name="perception" placeholder="Votre réponse..."></textarea>
+<label><input type="checkbox" name="sexualite" value="oui"> Oui</label>
+<label><input type="checkbox" name="sexualite" value="non"> Non</label>
 </div>
 
 <div class="card">
 <h2>Conclusion</h2>
-<textarea placeholder="Votre réponse..."></textarea>
-<button>Envoyer</button>
+<textarea name="conclusion" placeholder="Votre réponse..."></textarea>
+<button type="submit">Envoyer</button>
 </div>
+
+</form>
 
 </main>
 
